@@ -1,61 +1,76 @@
 ```
-# Build artifacts
+# CMake build directories
 build-katte/
-*.o
-*.obj
-*.a
-*.lib
-*.so
-*.dll
-*.dylib
-*.exe
-*.out
+build-katte-extreme/
 
-# CMake build files
-CMakeFiles/
+# CMake files
 CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
 cmake_install.cmake
-Makefile
+compile_commands.json
 
-# Dependencies
-node_modules/
+# Generated files
+*.dir/
+*.cmake
+*.pc
+*Config.cmake
+*config.cmake
+*version.h
+
+# Unity build files
+unity_*.cxx
+unity_*.c
+
+# Dart testing
+DartConfiguration.tcl
+
+# Dependencies and libraries
 vendor/
+external/
 
-# Logs and temp files
-*.log
+# Temporary and cache files
 *.tmp
+*.temp
+*.cache
 *.swp
+*~
 
-# Environment
+# Logs
+*.log
+
+# Environment files
 .env
 .env.local
 *.env.*
 
-# Editors
+# OS specific
+.DS_Store
+Thumbs.db
+
+# IDE specific
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Coverage reports
-coverage/
-htmlcov/
-.coverage
-
-# Python specific
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-.Python
-*.so
-
-# Distribution / packaging
-.dist-info/
-*.egg-info/
-EGG-INFO/
-
-# OS generated files
-.DS_Store
-Thumbs.db
+# Archives
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
 ```
