@@ -140,6 +140,11 @@ option(LLAMA_USE_PREBUILT_UI "llama: use prebuilt UI from HF Bucket when availab
 option(LLAMA_TOOLS_INSTALL "llama: install tools" ${LLAMA_TOOLS_INSTALL_DEFAULT})
 option(LLAMA_TESTS_INSTALL "llama: install tests" ON)
 
+# Katte-LLama optimizations
+option(KATTE_ENABLED "katte: enable persistent KV cache with SSD backing for extreme RAM efficiency" OFF)
+option(KATTE_CPU_OPTIMIZATIONS "katte: enable aggressive CPU-specific optimizations for AMD EPYC/Intel Xeon" OFF)
+option(KATTE_CONTEXT_COMPRESSION "katte: enable context compression for reduced memory usage" OFF)
+
 # 3rd party libs
 option(LLAMA_OPENSSL    "llama: use openssl to support HTTPS" ON)
 option(LLAMA_SUBPROCESS "llama-common: use subprocess, required by server tools and server router mode" ${LLAMA_SUBPROCESS_DEFAULT})
