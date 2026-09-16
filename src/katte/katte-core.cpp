@@ -3,6 +3,7 @@
 
 #include "katte-core.h"
 #include <cstring>
+#include <cstdio>
 #include <chrono>
 #include <algorithm>
 #include <numeric>
