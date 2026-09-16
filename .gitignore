@@ -1,38 +1,61 @@
 ```
-# Build directories
+# Build artifacts
 build-katte/
-build-katte-extreme/
-
-# CMake generated files
-CMakeCache.txt
-CMakeFiles/
-Makefile
-cmake_install.cmake
-compile_commands.json
-
-# Compiled libraries and executables
-*.so
-*.a
 *.o
 *.obj
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
 *.out
 
-# C++ build artifacts
-*.so.*
-*.dylib
-*.dll
-*.exe
+# CMake build files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
-# Temporary build files
-*.tmp
+# Dependencies
+node_modules/
+vendor/
+
+# Logs and temp files
 *.log
+*.tmp
+*.swp
 
-# UI build artifacts
-tools/ui/ui-gzip/
-tools/ui/ui.cpp
-tools/ui/ui.h
-tools/ui/.ui-embed.sha256
-tools/ui/.ui-stamp
-tools/ui/dist.tar.gz.sha256
+# Environment
+.env
+.env.local
+*.env.*
 
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Distribution / packaging
+.dist-info/
+*.egg-info/
+EGG-INFO/
+
+# OS generated files
+.DS_Store
+Thumbs.db
 ```
