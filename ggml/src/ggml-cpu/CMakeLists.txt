@@ -675,6 +675,12 @@ function(ggml_add_cpu_backend_variant_impl tag_name)
     target_compile_options(${GGML_CPU_NAME} PRIVATE ${ARCH_FLAGS})
     target_compile_definitions(${GGML_CPU_NAME} PRIVATE ${ARCH_DEFINITIONS})
 
+    # Ensure non-finite math arithmetics are supported (required for ggml.c routines)
+    # ref: https://github.com/ggml-org/llama.cpp/pull/7154#issuecomment-2143844461
+    if (NOT MSVC)
+        target_compile_options(${GGML_CPU_NAME} PRIVATE -fno-finite-math-only)
+    endif()
+
     if (EMSCRIPTEN)
         set_target_properties(${GGML_CPU_NAME} PROPERTIES COMPILE_FLAGS "-msimd128")
     endif()
