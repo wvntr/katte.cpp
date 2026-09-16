@@ -1,11 +1,11 @@
 include_directories(${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR})
 
-# Katte KV Cache - Persistent context caching system
+# Katte KV Cache - Persistent context caching system (files are in src/katte/)
 set(KATTE_SOURCES
-    ${PROJECT_SOURCE_DIR}/src/katte-kv-cache.cpp
-    ${PROJECT_SOURCE_DIR}/src/katte-kv-cache.h
-    ${PROJECT_SOURCE_DIR}/src/katte-integration.cpp
-    ${PROJECT_SOURCE_DIR}/src/katte-integration.h
+    ${PROJECT_SOURCE_DIR}/src/katte/katte-kv-cache.cpp
+    ${PROJECT_SOURCE_DIR}/src/katte/katte-kv-cache.h
+    ${PROJECT_SOURCE_DIR}/src/katte/katte-core.cpp
+    ${PROJECT_SOURCE_DIR}/src/katte/katte-core.h
 )
 
 # server-context containing the core server logic, used by llama-server and CLI

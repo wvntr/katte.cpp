@@ -1,38 +1,38 @@
 ```
 # Build directories
 build-katte/
+build-katte-extreme/
 
-# Compiled binaries and libraries
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
+
+# Compiled libraries and executables
 *.so
+*.a
+*.o
+*.obj
+*.out
+
+# C++ build artifacts
+*.so.*
 *.dylib
 *.dll
 *.exe
 
-# CMake files
-CMakeCache.txt
-CMakeFiles/
-cmake_install.cmake
-Makefile
-compile_commands.json
-
-# IDE files
-.vscode/
-.idea/
-
-# Logs
+# Temporary build files
+*.tmp
 *.log
 
-# Temporary files
-*.tmp
-*.swp
-
-# Coverage reports
-coverage/
-htmlcov/
-
-# Distribution / packaging
-dist/
-*.tar.gz
-*.zip
+# UI build artifacts
+tools/ui/ui-gzip/
+tools/ui/ui.cpp
+tools/ui/ui.h
+tools/ui/.ui-embed.sha256
+tools/ui/.ui-stamp
+tools/ui/dist.tar.gz.sha256
 
 ```
