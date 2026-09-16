@@ -70,6 +70,13 @@ target_compile_features   (llama PRIVATE cxx_std_17) # don't bump
 
 target_link_libraries(llama PUBLIC ggml)
 
+# Katte-LLama: Persistent KV Cache module (opcional)
+if (KATTE_ENABLED)
+    add_subdirectory(katte)
+    target_sources(llama PRIVATE $<TARGET_OBJECTS:katte>)
+    target_compile_definitions(llama PRIVATE KATTE_ENABLED)
+endif()
+
 if (BUILD_SHARED_LIBS)
     set_target_properties(llama PROPERTIES POSITION_INDEPENDENT_CODE ON)
     target_compile_definitions(llama PRIVATE LLAMA_BUILD)
