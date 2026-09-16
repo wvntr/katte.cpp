@@ -1,6 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /workspace/tools/gguf-split
-# Build directory: /workspace/build-katte/tools/gguf-split
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.

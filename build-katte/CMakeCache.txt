@@ -729,9 +729,6 @@ LLAMA_FATAL_WARNINGS:BOOL=OFF
 //Location of header  files
 LLAMA_INCLUDE_INSTALL_DIR:PATH=include
 
-//No help, variable specified on the command line.
-LLAMA_KATTE:UNINITIALIZED=ON
-
 //Location of library files
 LLAMA_LIB_INSTALL_DIR:PATH=lib
 
